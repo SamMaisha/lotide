@@ -21,7 +21,7 @@ const eqArrays = function (array1, array2) {
     }
   }
   return assertion;
-}
+};
 
 // eqObjects FUNCTION IMPLEMENTATION
 
@@ -34,16 +34,16 @@ const eqObjects = function (object1, object2) {
   }
   for (const key1 in object1) {
     if (Array.isArray(object1[key1])) {
-      return eqArrays(object1[key1], object2[key1])
+      return eqArrays(object1[key1], object2[key1]);
     }
     if (object1[key1] !== object2[key1]) {
       return false;
     }
   }
   return true;
-}
+};
 
-// TEST CODE 
+// TEST CODE
 
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
