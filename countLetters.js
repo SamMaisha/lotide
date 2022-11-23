@@ -24,7 +24,7 @@ const countLetters = function (countSentence) {
     }
   }
   return countLettersInSentence;
-}; c
+};
 
 // TEST CODE
 
