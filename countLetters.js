@@ -14,7 +14,7 @@ const assertEqual = function (actual, expected) {
 
 const countLetters = function (countSentence) {
   let countLettersInSentence = {};
-  for (letters of countSentence) {
+  for (const letters of countSentence) {
     if (letters !== " ") {
       if (countLettersInSentence[letters]) {
         countLettersInSentence[letters] += 1;
@@ -24,11 +24,11 @@ const countLetters = function (countSentence) {
     }
   }
   return countLettersInSentence;
-}
+}; c
 
-// TEST CODE 
+// TEST CODE
 
-result1 = countLetters('a bb ccc dddd eeeee ffffff');
+const result1 = countLetters('a bb ccc dddd eeeee ffffff');
 assertEqual(result1["a"], 1);
 assertEqual(result1["b"], 2);
 assertEqual(result1["c"], 3);
