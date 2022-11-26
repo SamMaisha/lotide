@@ -23,7 +23,7 @@ const assertEqual = function (actual, expected) {
 
 // TEST
 
-result1 = findKey({
+const result1 = findKey({
   "Blue Hill": { stars: 1 },
   "Akaleri": { stars: 3 },
   "noma": { stars: 2 },
@@ -34,7 +34,7 @@ result1 = findKey({
 
 assertEqual(result1, "noma");
 
-result2 = findKey({
+const result2 = findKey({
   Sam: 2,
   Cody: 3,
   Billy: 5,
