@@ -1,0 +1,3 @@
+entering some text into vim
+entering some text into vim
+

@@ -1,5 +1,5 @@
 // eqArrays FUNCTION
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   let assertion = true;
   if (array1.length !== array2.length) {
     assertion = false;
@@ -16,7 +16,7 @@ const eqArrays = function (array1, array2) {
 
 // eqObjects FUNCTION
 
-const eqObjects = function (object1, object2) {
+const eqObjects = function(object1, object2) {
   if (Object.keys(object1).length !== Object.keys(object2).length) {
     return false; // check to verify if objects have same number of keys
   }
@@ -31,9 +31,9 @@ const eqObjects = function (object1, object2) {
   return true;
 };
 
-// assertObjectsEqual FUNCTION IMPLEMENTATION
+// assertObjectsEqual FUNCTION IMPLEMENTATION; take in two objects and prints an appropriate pass/fail message to the console
 
-const assertObjectsEqual = function (actual, expected) {
+const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect;
   let objectsEqual = eqObjects(actual, expected);
   if (objectsEqual) {
@@ -43,9 +43,12 @@ const assertObjectsEqual = function (actual, expected) {
   }
 };
 
-// TEST CODE
+module.exports = assertObjectsEqual;
 
-assertObjectsEqual({ a: "1", b: "2" }, { b: "2", a: "1" });
-assertObjectsEqual({ a: "1", b: "2" }, { a: "1", b: "2", c: "3" });
-assertObjectsEqual({ c: "1", d: ["2", 3] }, { d: ["2", 3], c: "1" });
-assertObjectsEqual({ c: "1", d: ["2", 3] }, { c: "1", d: ["2", 3, 4] });
+
+// // TEST CODE
+
+// assertObjectsEqual({ a: "1", b: "2" }, { b: "2", a: "1" });
+// assertObjectsEqual({ a: "1", b: "2" }, { a: "1", b: "2", c: "3" });
+// assertObjectsEqual({ c: "1", d: ["2", 3] }, { d: ["2", 3], c: "1" });
+// assertObjectsEqual({ c: "1", d: ["2", 3] }, { c: "1", d: ["2", 3, 4] });

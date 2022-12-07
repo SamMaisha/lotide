@@ -1,4 +1,4 @@
-// middle FUNCTION IMPLEMENTATIOM
+// middle FUNCTION IMPLEMENTATIOM; takes in an array and return the middle-most element(s) of the given array.
 
 const middle = function(array) {
   let newArray = [];
@@ -9,7 +9,7 @@ const middle = function(array) {
   let middle = (array.length / 2);
   if (array.length % 2 !== 0) {
     middleArrayElement = Math.ceil(middle) - 1;
-    newArray.push(array[middleArrayElement])
+    newArray.push(array[middleArrayElement]);
     return newArray;
   }
   if (array.length % 2 === 0) {

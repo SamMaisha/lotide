@@ -1,6 +1,6 @@
-const eqArrays = require('./eqArray');
+const eqArrays = require('./eqArrays');
 
-// assertArraysEqual FUNCTION IMPLEMENTATION
+// assertArraysEqual FUNCTION IMPLEMENTATION; takes in two arrays and console.log an appropriate message to the console.
 
 const assertArraysEqual = function(actualArray, expectedArray) {
   let arraysEqual = eqArrays(actualArray, expectedArray);

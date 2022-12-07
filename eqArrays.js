@@ -1,4 +1,4 @@
-// FUNCTION IMPLEMENTATION
+// eqArrays FUNCTION IMPLEMENTATION; takes in two arrays and returns true or false, based on a perfect match.
 
 const eqArrays = function(array1, array2) {
   let assertion = true;
@@ -13,7 +13,7 @@ const eqArrays = function(array1, array2) {
     }
   }
   return assertion;
-}
+};
 
 module.exports = eqArrays;
 

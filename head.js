@@ -1,6 +1,5 @@
-const assertEqual = require('./assertEqual');
+// head FUNCTION IMPLEMENTATION; returns the first item in the array
 
-// HEAD FUNCTION IMPLEMENTATION
 const head = function(array) {
   return array[0];
 };

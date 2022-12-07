@@ -1,18 +1,7 @@
-// ASSERT EQUAL FUNCTION
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`🟢🟢🟢 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-
-// countLetters FUNCTION IMPLEMENTATION
+// countLetters FUNCTION IMPLEMENTATION; takes in a sentence (as a string) and then return a count of each of the letters in that sentence.
 
 // countSentence; a string from which we will count of each letter in the string
-
-const countLetters = function (countSentence) {
+const countLetters = function(countSentence) {
   let countLettersInSentence = {};
   for (const letters of countSentence) {
     if (letters !== " ") {
@@ -26,15 +15,28 @@ const countLetters = function (countSentence) {
   return countLettersInSentence;
 };
 
-// TEST CODE
+module.exports = countLetters;
 
-const result1 = countLetters('a bb ccc dddd eeeee ffffff');
-assertEqual(result1["a"], 1);
-assertEqual(result1["b"], 2);
-assertEqual(result1["c"], 3);
-assertEqual(result1["d"], 4);
-assertEqual(result1["e"], 5);
-assertEqual(result1["f"], 6);
+// // TESTING
+
+// // ASSERT EQUAL FUNCTION
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`🟢🟢🟢 Assertion Passed: ${actual} === ${expected}`);
+//   } else {
+//     console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
+//   }
+// };
+
+// // TEST CODE
+
+// const result1 = countLetters('a bb ccc dddd eeeee ffffff');
+// assertEqual(result1["a"], 1);
+// assertEqual(result1["b"], 2);
+// assertEqual(result1["c"], 3);
+// assertEqual(result1["d"], 4);
+// assertEqual(result1["e"], 5);
+// assertEqual(result1["f"], 6);
 
 
 
