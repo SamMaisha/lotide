@@ -1,6 +1,6 @@
 {
   "name": "@sam_maisha/lotide",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": " Lotide is a package that has some assertion functions similar to Lodash and some utility functions",
   "main": "index.js",
   "directories": {
