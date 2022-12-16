@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@sam_maisha/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": " Lotide is a package that has some assertion functions similar to Lodash and some utility functions",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,9 @@
     "type": "git",
     "url": "git+https://github.com/SamMaisha/lotide.git"
   },
-  "author": "",
+  "author": {
+    "author": "Sam Maisha <sam.maisha99@gmail.com>"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SamMaisha/lotide/issues"
