@@ -2,7 +2,7 @@
   "name": "@sam_maisha/lotide",
   "version": "1.0.1",
   "description": " Lotide is a package that has some assertion functions similar to Lodash and some utility functions",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
